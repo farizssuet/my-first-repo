@@ -8,38 +8,88 @@
 
 <header>
     <h1>Membership Plans</h1>
+    <p>Invest in Yourself Today</p>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="membership.html">Membership</a>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About Us</a>
+    <a href="{{ url_for('membership') }}">Membership</a>
 </nav>
 
-<main>
+<main class="container">
     <h2>Choose Your Plan</h2>
 
-    <div class="box">
-        <h3>Basic Plan</h3>
-        <p>Access to gym equipment</p>
-        <p><b>Rs. 3,000 / month</b></p>
-    </div>
+    <section class="cards">
+        <div class="box">
+            <h3>Basic Plan</h3>
+            <p><strong>Perfect for self-motivated individuals</strong></p>
+            <p>✓ Access to all gym equipment</p>
+            <p>✓ Cardio and strength training areas</p>
+            <p>✓ Locker room with showers</p>
+            <p>✓ 24/7 access with key card</p>
+            <p style="margin-top: 20px; font-size: 1.4em;"><b>Rs. 3,000 / month</b></p>
+            <p style="margin-top: 15px;"><a href="#" class="btn">Sign Up</a></p>
+        </div>
 
-    <div class="box">
-        <h3>Standard Plan</h3>
-        <p>Gym + Cardio + Classes</p>
-        <p><b>Rs. 5,000 / month</b></p>
-    </div>
+        <div class="box">
+            <h3>Standard Plan</h3>
+            <p><strong>Most popular choice!</strong></p>
+            <p>✓ Everything in Basic Plan</p>
+            <p>✓ Unlimited group fitness classes</p>
+            <p>✓ Yoga, HIIT, Spin, Zumba & more</p>
+            <p>✓ Monthly fitness assessment</p>
+            <p>✓ Nutrition guidance handouts</p>
+            <p style="margin-top: 20px; font-size: 1.4em;"><b>Rs. 5,000 / month</b></p>
+            <p style="margin-top: 15px;"><a href="#" class="btn">Sign Up</a></p>
+        </div>
 
-    <div class="box">
-        <h3>Premium Plan</h3>
-        <p>All services + Personal Trainer</p>
-        <p><b>Rs. 8,000 / month</b></p>
-    </div>
+        <div class="box">
+            <h3>Premium Plan</h3>
+            <p><strong>Maximum results, maximum support</strong></p>
+            <p>✓ Everything in Standard Plan</p>
+            <p>✓ 8 personal training sessions per month</p>
+            <p>✓ Customized workout program</p>
+            <p>✓ Personalized nutrition plan</p>
+            <p>✓ Body composition tracking</p>
+            <p>✓ Priority class booking</p>
+            <p style="margin-top: 20px; font-size: 1.4em;"><b>Rs. 8,000 / month</b></p>
+            <p style="margin-top: 15px;"><a href="#" class="btn">Sign Up</a></p>
+        </div>
+    </section>
+
+    <section class="box">
+        <h2>Special Offers</h2>
+        <p><strong>New Member Bonus:</strong> Sign up this month and get your first week FREE! Try any membership tier risk-free.</p>
+        <p><strong>Annual Savings:</strong> Pay for 12 months upfront and save 15% on any plan. That's like getting 2 months free!</p>
+        <p><strong>Family Discount:</strong> Bring a family member and both get 20% off your monthly membership fees.</p>
+    </section>
+
+    <section class="box">
+        <h3>What's Included in All Plans</h3>
+        <ul>
+            <li>State-of-the-art equipment maintained to the highest standards</li>
+            <li>Clean, spacious facilities with climate control</li>
+            <li>Complimentary Wi-Fi throughout the gym</li>
+            <li>Free parking for all members</li>
+            <li>Access to our supportive community and member events</li>
+            <li>No long-term contracts - cancel anytime with 30 days notice</li>
+        </ul>
+    </section>
+
+    <section class="box">
+        <h3>Ready to Start Your Journey?</h3>
+        <p>Still have questions? Contact us for a free consultation and gym tour. Our team is ready to help you find the perfect plan for your goals and budget.</p>
+        <p><strong>Phone:</strong> +92-300-1234567 | <strong>Email:</strong> info@powerfitgym.com</p>
+        <p style="margin-top: 20px;">
+            <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
+            <a href="{{ url_for('about') }}" class="btn secondary" style="margin-left: 10px;">Learn More About Us</a>
+        </p>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; 2025 PowerFit Gym</p>
+    <p>&copy; 2025 PowerFit Gym — <small class="muted">All rights reserved</small></p>
 </footer>
 
 </body>

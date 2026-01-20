@@ -2,55 +2,77 @@
 <html>
 <head>
     <title>PowerFit Gym - About Us</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
 <header>
     <h1>About PowerFit Gym</h1>
+    <p>Building Stronger Bodies, Stronger Minds</p>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="membership.html">Membership</a>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About Us</a>
+    <a href="{{ url_for('membership') }}">Membership</a>
 </nav>
 
 <main class="container">
     <section class="box">
         <h2>Who We Are</h2>
         <p>
-            PowerFit Gym was founded with a clear mission: make high-quality fitness
+            PowerFit Gym was founded in 2015 with a clear mission: make high-quality fitness
             accessible and enjoyable for everyone. We blend evidence-based training
-            with a friendly community atmosphere.
+            with a friendly community atmosphere. Whether you're a complete beginner or
+            a seasoned athlete, our facility and team are here to support your journey.
+        </p>
+        <p>
+            Over the past decade, we've helped thousands of members transform their lives
+            through consistent effort, expert guidance, and unwavering support. Our gym
+            isn't just about lifting weights—it's about building confidence, resilience,
+            and lifelong healthy habits.
         </p>
 
         <h2>Our Mission & Values</h2>
         <ul>
-            <li><strong>Integrity:</strong> honest coaching and safe programming.</li>
-            <li><strong>Inclusivity:</strong> accessible options for all fitness levels.</li>
-            <li><strong>Excellence:</strong> ongoing learning and top-quality equipment.</li>
+            <li><strong>Integrity:</strong> We provide honest coaching, safe programming, and transparent pricing. Your health and safety always come first.</li>
+            <li><strong>Inclusivity:</strong> We offer accessible options for all fitness levels, ages, and abilities. Everyone deserves a place to grow stronger.</li>
+            <li><strong>Excellence:</strong> Our team commits to ongoing learning, certifications, and investing in top-quality equipment to give you the best experience.</li>
+            <li><strong>Community:</strong> We believe fitness is better together. Our supportive environment encourages members to motivate and inspire each other.</li>
         </ul>
+
+        <h2>Our Facility</h2>
+        <p>
+            Our 15,000 square foot facility features state-of-the-art cardio equipment, extensive free weight areas,
+            dedicated functional training zones, modern group fitness studios, spacious locker rooms with showers,
+            and a comfortable lounge area. We maintain our equipment meticulously and keep our space clean and welcoming.
+        </p>
     </section>
 
     <section class="cards" aria-label="Meet the team">
         <div class="box">
             <h3>Alex Lee</h3>
-            <p>Head Trainer — Strength & Conditioning specialist with 10+ years experience.</p>
+            <p><strong>Head Trainer</strong></p>
+            <p>Strength & Conditioning specialist with 10+ years experience. Alex holds certifications in NSCA-CSCS and specializes in powerlifting and athletic performance. Known for motivating members to push beyond their limits safely.</p>
         </div>
         <div class="box">
             <h3>Maria Gomez</h3>
-            <p>Group Fitness Manager — Yoga and HIIT instructor focused on form and fun.</p>
+            <p><strong>Group Fitness Manager</strong></p>
+            <p>Yoga and HIIT instructor focused on proper form and making fitness fun. Maria brings 8 years of teaching experience and holds certifications in RYT-200 Yoga and Les Mills HIIT. Her energy is contagious!</p>
         </div>
         <div class="box">
             <h3>Sam Patel</h3>
-            <p>Coach & Nutrition Advisor — creates practical plans for real results.</p>
+            <p><strong>Coach & Nutrition Advisor</strong></p>
+            <p>Creates practical training and nutrition plans for real, sustainable results. Sam is a certified personal trainer and precision nutrition coach who believes in science-backed, no-nonsense approaches to health.</p>
         </div>
     </section>
 
     <section class="box">
         <h3>Contact & Visit</h3>
-        <p>Curious? Book a free tour or consultation — <a href="membership.html" class="btn">Get in touch</a></p>
+        <p>Curious about PowerFit? We'd love to show you around! Book a free gym tour or consultation to see our facility, meet our team, and learn how we can help you reach your goals.</p>
+        <p style="margin-top: 15px;">
+            <a href="{{ url_for('membership') }}" class="btn">Get Started Today</a>
+        </p>
     </section>
 </main>
 
